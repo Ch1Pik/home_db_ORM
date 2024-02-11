@@ -1,1 +1,3 @@
 SQLAlchemy==2.0.25
+psycopg2==2.9.9
+prettytabl==3.9.0
