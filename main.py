@@ -5,8 +5,8 @@ from models import create_tables, add_json, Publisher, Shop, Book, Stock, Sale
 from task2 import publisher_info
 
 settings = configparser.ConfigParser()
-settings.read('setting.ini')
-engine = sq.create_engine(settings['DEFAULT']['DSN'])
+DSN = "postgresql://postgres:postgres@localhost:5432/home_db_ORM"
+engine = sq.create_engine(DSN)
 
 create_tables(engine)
 
